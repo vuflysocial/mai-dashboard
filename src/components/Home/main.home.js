@@ -25,7 +25,7 @@ const Home = (props) => {
           style={{ width: "300px", height: "300px" }}
         />
       </div>
-      <h1 className="font-medium text-2xl md:text-7xl text-dark">
+      <h1 className="font-medium text-2xl md:text-7xl text-white">
         {props.title}
       </h1>
       <p className="text-xs md:text-base text-white pt-3">
