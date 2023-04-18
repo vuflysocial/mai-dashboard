@@ -26,8 +26,8 @@ export default function App() {
                 path="/"
                 element={
                   <Home
-                    title="#MELOINU."
-                    description="Melo Ai is your ultimate powered AI dashboard bringing you an enhanced expierence at web3 and 4."
+                    title="melo inu."
+                    description=""
                     titleStyle={{ color: "white", fontWeight: "bold" }}
                     descriptionStyle={{ color: "white", fontWeight: "bold" }}
                   />
