@@ -1,4 +1,3 @@
-
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Chatgpt from "./components/ChatGPT/main.chatgpt";
@@ -12,17 +11,14 @@ import Dash from "./components/Dash/main.dash";
 import Trade from "./components/Trade/main.trade";
 import NFTS from "./components/NFTS/main.nfts";
 import Charts from "./components/Charts/main.charts";
-import Demo from "./components/Demo/main.demo";
-
+import TheStory from "./components/TheStory/main.thestory";
 
 export default function App() {
   return (
-
-<MainLayouts>
+    <MainLayouts>
       <BrowserRouter>
         <Octocat />
         <div className="flex">
-
           <Sidebar />
           <main className="p-7 flex-1">
             <Routes>
@@ -30,10 +26,11 @@ export default function App() {
                 path="/"
                 element={
                   <Home
-                    title="MAI AI Powered Dashboard."
+                    title="#MELOINU."
                     description="Melo Ai is your ultimate powered AI dashboard bringing you an enhanced expierence at web3 and 4."
+                    titleStyle={{ color: "white", fontWeight: "bold" }}
+                    descriptionStyle={{ color: "white", fontWeight: "bold" }}
                   />
-
                 }
               />
               <Route
@@ -55,12 +52,11 @@ export default function App() {
                 }
               />
               <Route path="/dash" element={<Dash />} />
-
+              <Route path="/thestory" element={<TheStory />} />
               <Route path="/nfts" element={<NFTS />} />
               <Route path="/charts" element={<Charts />} />
               <Route path="/trade" element={<Trade />} />
               <Route path="/question" element={<FAQ />} />
-              <Route path="/demo" element={<Demo />} />
             </Routes>
           </main>
         </div>
