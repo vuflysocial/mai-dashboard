@@ -4,6 +4,7 @@ import Completion from "./completion.chatgpt";
 const Chatgpt = (props) => {
   return (
     <React.Fragment>
+
       <div className="mt-2 text-center">
         <h1 className="font-medium text-sm md:text-xl underline underline-offset-8 text-dark">
           MAI - {props.title}

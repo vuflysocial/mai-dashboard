@@ -86,7 +86,7 @@ const Image = () => {
             |
 
           */}
-         
+
 
           {/*
 
@@ -95,14 +95,14 @@ const Image = () => {
             |--------------------------------------------------------------------------
             |
             |
-            
+
           */}
 
           {chatLog.map((d, i) => (
             <>
               {d.user === "me" && (
                 <div
-                  className="flex p-5 rounded-lg mt-5 mb-5 bg-blue-300 border-2 border-black"
+                  className="flex p-5 rounded-lg mt-5 mb-5 bg-green-600 border-2 border-black"
                   style={{ boxShadow: "0.4rem 0.4rem 0 #222" }}
                   key={i}
                 >
@@ -146,11 +146,11 @@ const Image = () => {
                 </div>
               )}
             </>
-          ))} 
+          ))}
           {loading && (
             <div className="relative">
               <div
-                className="flex p-5 bg-yellow-400 rounded-lg mt-5 mb-5 border-2 border-black"
+                className="flex p-5 bg-green-400 rounded-lg mt-5 mb-5 border-2 border-black"
                 style={{ boxShadow: "0.4rem 0.4rem 0 #222" }}
               >
                 <img

@@ -11,6 +11,8 @@ import {
   faExchange,
   faBarChart,
   faBolt,
+  faBook,
+  faHeadphones,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
@@ -20,19 +22,26 @@ const Sidebar = () => {
   const [attention, setAttention] = useState(true);
   const menus = [
     { title: "Home", link: "/", icon: "faHouse" },
-    { title: "ChatGPT", link: "/chatgpt", icon: "faMessage" },
-    { title: "Dall·E", link: "/dall-e", icon: "faImages" },
-    { title: "AIM", link: "/aim", icon: "faBarChart" },
-    { title: "Dash", link: "/dash", icon: "faBolt" },
-    { title: "NFTs", link: "/nfts", icon: "faImages" },
+    { title: "MAI", link: "/chatgpt", icon: "faMessage" },
+    { title: "ME", link: "/dall-e", icon: "faImages" },
+    { title: "The Story", link: "/thestory", icon: "faBook" },
+    { title: "Tending", link: "/nfts", icon: "faHeadphones" },
     { title: "Trade", link: "/trade", icon: "faExchange" },
     { title: "Charts", link: "/charts", icon: "faBarChart" },
+    { title: "MECO", link: "/charts", icon: "faBarChart" },
+    { title: "Telegram", link: "https://t.me/meloinuofficial", icon: "faQuestionCircle" },
     { title: "FAQs", link: "/question", icon: "faQuestionCircle" },
-    { title: "Demo", link: "/demo", icon: "faVideo" },
+    { title: "Twitter", link: "https://twitter.com/meloinu", icon: "faQuestionCircle" },
+    { title: "Telegram", link: "https://t.me/meloinuofficial", icon: "faQuestionCircle" },
+
   ];
 
   const handleIcon = (icon) => {
     switch (icon) {
+      case "faHeadphones":
+        return faHeadphones;
+      case "faBook":
+        return faBook;
       case "faBarChart":
         return faBarChart;
       case "faBolt":
@@ -101,6 +110,7 @@ const Sidebar = () => {
             to={menu.link}
             style={({ isActive }) => ({
               color: isActive ? "#000" : "#696969",
+
             })}
             key={index}
           >
@@ -182,7 +192,7 @@ const Sidebar = () => {
             </p>
             <a
               className="text-xs md:text-sm underline"
-              href="https://openai.com/blog/chatgpt/"
+              href=""
               target="_blank"
               rel="noreferrer"
             >

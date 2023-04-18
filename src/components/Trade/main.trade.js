@@ -8,20 +8,37 @@ const Trade = () => {
   };
 
   return (
-    <div>
-      <h1 style={headingStyle}>How To Swap on Voltichange And Auto burn every Transaction</h1>
-      <br />
-      <h2>Connect Wallet with BNB Funds</h2>
-      <div>
+    <div
+      style={{
+        backgroundImage:
+          'url("//data.1freewallpapers.com/detail/gradient-green-texture-background.jpg")',
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        opacity: 1,
+        height: "115vh",
+        width: "90vw",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      <div style={{ zIndex: 1 }}>
+        <h1 style={headingStyle}>How To Swap on Voltichange And Auto burn every Transaction</h1>
         <br />
-      <h2>Update Slippage in settings to 1% & turn Compatability mode ON</h2>
+        <h2>Connect Wallet with BNB Funds</h2>
+        <div>
+          <br />
+          <h2>Update Slippage in settings to 1% & turn Compatability mode ON</h2>
+        </div>
+        <br />
+        <div>
+          <h2>Swap Your Desired Amount and burn 🔥</h2>
+        </div>
       </div>
       <br />
-      <div>
-      <h2>Swap Your Desired Amount and burn 🔥</h2>
-      </div>
-      <br />
-      <div className="flex">
+      <div className="flex" style={{ zIndex: 1 }}>
         <div className="w-1/2">
           <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
           <iframe
@@ -33,7 +50,7 @@ const Trade = () => {
         </div>
 
         <div className="w-1/2">
-        <h1 style={headingStyle}>How to Swap MELO On Voltichange</h1>
+          <h1 style={headingStyle}>How to Swap MELO On Voltichange</h1>
           <iframe
             width="560"
             height="315"
@@ -50,3 +67,4 @@ const Trade = () => {
 };
 
 export default Trade;
+

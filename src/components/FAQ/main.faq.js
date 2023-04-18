@@ -9,7 +9,7 @@ const FAQ = () => {
       li: false,
       answer:
         "This website allows us to communicate with MAI AI and interact with the user dashboard",
-      color: "#D0E2DB",
+      color: "#fff",
     },
     {
       question: "What can MAI do on this website?",
@@ -21,24 +21,39 @@ const FAQ = () => {
             "ME MAI - Create original, realistic images and art from a text description",
         },
       ],
-      color: "#8BD3DD",
+      color: "#fff",
     },
     {
       question: "",
       li: false,
       answer: "",
-      color: "#FAAE2B",
+      color: "#fff",
     },
     {
       question: "",
       answer:
         "",
-      color: "#FE98A3",
+      color: "#fff",
     },
   ];
 
   return (
-    <>
+    <div
+      style={{
+        backgroundImage:
+          'url("//data.1freewallpapers.com/detail/gradient-green-texture-background.jpg")',
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        opacity: 1,
+        height: "100vh",
+        width: "90vw",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
       <div className="p-2 mt-2">
         {lists.map((list, index) => (
           <div key={index} className="mb-5 mt-5">
@@ -53,7 +68,7 @@ const FAQ = () => {
                 {list.question}
               </h1>
             </div>
-            <div className="mt-3 text-gray-600 text-xs md:text-base">
+            <div className="mt-3 text-white-600 text-xs md:text-base">
               {!list.li ? (
                 <>
                   <span>{list.answer}</span>
@@ -71,47 +86,7 @@ const FAQ = () => {
           </div>
         ))}
       </div>
-
-      {/* <div className="p-2">
-        <div>
-          <h1 className="text-white text-xl md:text-2xl">
-            What can this website do?
-          </h1>
-          <div className="mt-3">
-            <span className="text-gray-400">
-              This website allows us to communicate with AI created by the
-              OpenAI organization
-            </span>
-          </div>
-        </div>
-
-        <div className="mt-10">
-          <h1 className="text-white text-xl md:text-2xl">
-            What can AI do on this website?
-          </h1>
-          <div className="mt-3 text-gray-400">
-            <ul style={{ listStyleType: "circle" }}>
-              <li>ChatGPT - Interacts with AI in a conversational way.</li>
-              <li>
-                Dall·E 2 - Create original, realistic images and art from a text
-                description
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="mt-10">
-          <h1 className="text-white text-xl md:text-2xl">
-            What technology is used on this website?
-          </h1>
-          <div className="mt-3">
-            <span className="text-gray-400">
-              This website is built using ReactJS, Tailwind CSS, OpenAI API
-            </span>
-          </div>
-        </div>
-      </div> */}
-    </>
+    </div>
   );
 };
 
