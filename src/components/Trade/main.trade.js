@@ -24,7 +24,7 @@ const Trade = () => {
         flexDirection: "column",
       }}
     >
-      <div style={{ zIndex: 1 }}>
+      <div style={{ zIndex: 1, textAlign: "center", padding: "1rem" }}>
         <h1 style={headingStyle}>How To Swap on Voltichange And Auto burn every Transaction</h1>
         <br />
         <h2>Connect Wallet with BNB Funds</h2>
@@ -38,21 +38,21 @@ const Trade = () => {
         </div>
       </div>
       <br />
-      <div className="flex" style={{ zIndex: 1 }}>
-        <div className="w-1/2">
+      <div className="flex" style={{ zIndex: 1, textAlign: "center" }}>
+        <div className="w-full">
           <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
           <iframe
             src="https://voltichange.net/api/widget/?chain=56&darktheme=false&tokenin=Native&tokenout=0x5c12C812794B874fe4Fdea9A4960df599C89b8E5&slippage=0.5"
             frameBorder="0"
-            width="400"
+            width="100%"
             height="650"
           ></iframe>
         </div>
 
-        <div className="w-1/2">
+        <div className="w-full">
           <h1 style={headingStyle}>How to Swap MELO On Voltichange</h1>
           <iframe
-            width="560"
+            width="100%"
             height="315"
             src="https://www.youtube.com/meloinu/embed/dQw4w9WgXcQ"
             title="YouTube video player"
