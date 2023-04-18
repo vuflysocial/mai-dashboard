@@ -105,34 +105,33 @@ const Sidebar = () => {
         </div>
       </div>
       <ul className="pt-6">
-        {menus.map((menu, index) => (
-          <NavLink
-            to={menu.link}
-            style={({ isActive }) => ({
-              color: isActive ? "#000" : "#696969",
+  {menus.map((menu, index) => (
+    <NavLink
+      to={menu.link}
+      style={({ isActive }) => ({
+        color: isActive ? "#000" : "#696969",
 
-            })}
-            key={index}
-          >
-            <li
-              className={`flex rounded-md py-3 md:py-4 px-2 cursor-pointer md:hover:bg-gray-500/10
-               text-sm items-center gap-x-4`}
-            >
-              <FontAwesomeIcon
-                icon={handleIcon(menu.icon)}
-                className={`text-base ml-1.5 md:text-lg md:ml-2.5`}
-              />
-              <span
-                className={`${
-                  !open && "scale-0"
-                } origin-left duration-200 md:text-lg`}
-              >
-                {menu.title}
-              </span>
-            </li>
-          </NavLink>
-        ))}
-      </ul>
+      })}
+      key={index}
+    >
+      <li
+        className={`flex rounded-md py-3 md:py-4 px-2 cursor-pointer md:hover:bg-gray-500/10
+         text-sm items-center gap-x-4`}
+      >
+        <FontAwesomeIcon
+          icon={handleIcon(menu.icon)}
+          className={`text-base ml-1.5 md:text-lg md:ml-2.5`}
+        />
+        <span
+          className={`${!open && "scale-0"} ${!open ? "hidden" : ""} md:text-lg`}
+        >
+          {menu.title}
+        </span>
+      </li>
+    </NavLink>
+  ))}
+</ul>
+
       <div
         className="px-3.5 md:px-5 mb-8 md:mb-5 rounded-lg md:bottom-0 bottom-10 absolute text-gray-600"
         role="alert"
