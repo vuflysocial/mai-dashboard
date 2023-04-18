@@ -25,10 +25,10 @@ const Home = (props) => {
           style={{ width: "300px", height: "300px" }}
         />
       </div>
-      <h1 className="font-medium text-2xl md:text-7xl text-white">
+      <h1 className="font-medium text-4xl md:text-7xl text-white">
         {props.title}
       </h1>
-      <p className="text-xs md:text-base text-white pt-3">
+      <p className="text-base md:text-lg text-white pt-3">
         {props.description}
       </p>
       <a
@@ -38,7 +38,7 @@ const Home = (props) => {
       >
         <button
           type="button"
-          className="mt-5 w-36 md:w-52 md:h-15 md:text-2xl font-medium rounded-lg px-5 py-2.5 border-2 border-black shadow-lg text-center mr-2 mb-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-white text-dark"
+          className="mt-5 w-44 md:w-60 md:h-16 md:text-3xl font-medium rounded-lg px-6 py-3 border-2 border-black shadow-lg text-center mr-2 mb-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-white text-dark"
           style={{ boxShadow: "0.4rem 0.4rem 0 #222" }}
         >
           Get Melo Swag
@@ -51,7 +51,7 @@ const Home = (props) => {
       >
         <button
           type="button"
-          className="mt-5 w-36 md:w-52 md:h-15 md:text-2xl font-medium rounded-lg px-5 py-2.5 border-2 border-black shadow-lg text-center mr-2 mb-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-white text-dark"
+          className="mt-5 w-44 md:w-60 md:h-16 md:text-3xl font-medium rounded-lg px-6 py-3 border-2 border-black shadow-lg text-center mr-2 mb-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-white text-dark"
           style={{ boxShadow: "0.4rem 0.4rem 0 #222" }}
         >
           Whitepaper
@@ -78,4 +78,5 @@ const Home = (props) => {
 };
 
 export default Home;
+
 
