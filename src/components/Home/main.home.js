@@ -4,7 +4,7 @@ const Home = (props) => {
   return (
     <div
       style={{
-        backgroundImage: `url('background.png')`, // Updated to include the background image
+        backgroundImage: `url('background.png')`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -17,18 +17,19 @@ const Home = (props) => {
         flexDirection: "column",
       }}
     >
-      <div className={`flex items-center`}>
-
-      </div>
-      <h1 className="font-md text-2xl md:text-7xl text-white" style={{ fontSize: "64px" }}> {/* Updated to set fontSize to "64px" */}
+      <div className={`flex items-center`}></div>
+      <h1 className="font-md text-2xl md:text-7xl text-white" style={{ fontSize: "64px" }}>
         {props.title}
       </h1>
-      <p className="text-xs md:text-base text-white pt-3">
-        {props.description}
-      </p>
-      <h1 className="font-md text-2xl md:text-7xl text-white" style={{ fontSize: "64px" }}> {/* Updated to set fontSize to "64px" */}
-        {props.description2}
-      </h1>
+      <div
+        className="text-center" // Added a container with text-center class
+        style={{ width: "60%" }} // Added a width of 60% to the container
+      >
+        <h1 className="font-md text-2xl md:text-7xl text-white" style={{ fontSize: "64px" }}>
+          {props.description2}
+        </h1>
+      </div>
+      <p className=" flex items-center text-center text-xs md:text-base text-white pt-3">{props.description}</p>
       <a
         href="https://meloinuofficial.myshopify.com/"
         target="_blank"
@@ -64,17 +65,10 @@ const Home = (props) => {
           alt="volt"
           style={{ width: "100px", height: "100px", margin: "0 10px" }}
         />
-
-        {/* <img
-          src="three.png"
-          alt="volt"
-          style={{ width: "100px", height: "100px", margin: "0 10px" }}
-        /> */}
       </div>
     </div>
   );
 };
 
 export default Home;
-
 
