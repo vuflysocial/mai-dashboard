@@ -10,8 +10,12 @@ import FAQ from "./components/FAQ/main.faq";
 import Dash from "./components/Dash/main.dash";
 import Trade from "./components/Trade/main.trade";
 import NFTS from "./components/NFTS/main.nfts";
-import Charts from "./components/Charts/main.charts";
 import TheStory from "./components/TheStory/main.thestory";
+import Deposit from "./components/deposit/main.deposit";
+import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
+
+
+import "./App.css"; // Import the CSS file for the animations
 
 export default function App() {
   return (
@@ -26,10 +30,17 @@ export default function App() {
                 path="/"
                 element={
                   <Home
+
+                    titleFont="canva sans"
                     title="melo inu."
-                    description=""
+                    size='height: 36px width: 36px'
+                    description2="a way for the world to be melo."
+                    description="melo inu is a community coin here to help revouloutionize the crypto world.
+                     holders that are melo dont want to be the big dog on campus, they just want a piece of the action.
+                     Through planned development of our ecosytem we aim to bring crypto to the real world."
                     titleStyle={{ color: "white", fontWeight: "bold" }}
                     descriptionStyle={{ color: "white", fontWeight: "bold" }}
+
                   />
                 }
               />
@@ -51,15 +62,16 @@ export default function App() {
                   />
                 }
               />
+              <Route path="/deposit" element={<Deposit />} />
               <Route path="/dash" element={<Dash />} />
               <Route path="/thestory" element={<TheStory />} />
               <Route path="/nfts" element={<NFTS />} />
-              <Route path="/charts" element={<Charts />} />
               <Route path="/trade" element={<Trade />} />
               <Route path="/question" element={<FAQ />} />
             </Routes>
           </main>
         </div>
+
       </BrowserRouter>
     </MainLayouts>
   );
