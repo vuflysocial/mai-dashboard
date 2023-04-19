@@ -11,7 +11,6 @@ import Dash from "./components/Dash/main.dash";
 import Trade from "./components/Trade/main.trade";
 import NFTS from "./components/NFTS/main.nfts";
 import TheStory from "./components/TheStory/main.thestory";
-import Deposit from "./components/deposit/main.deposit";
 import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
 
 
@@ -62,10 +61,10 @@ export default function App() {
                   />
                 }
               />
-              <Route path="/deposit" element={<Deposit />} />
-              <Route path="/dash" element={<Dash />} />
+              
+              
               <Route path="/thestory" element={<TheStory />} />
-              <Route path="/nfts" element={<NFTS />} />
+              
               <Route path="/trade" element={<Trade />} />
               <Route path="/question" element={<FAQ />} />
             </Routes>
