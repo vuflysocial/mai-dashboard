@@ -1,5 +1,5 @@
 import React from "react";
-
+// Import your CSS file that contains the styles for Home component
 
 const Home = (props) => {
   return (
@@ -114,6 +114,32 @@ const Home = (props) => {
 
 export default Home;
 
+// Define the CSS animation using a style block
+<style>
 
+  {`
+    @keyframes changeColors {
+      0% {
+        background-color: #00FF00;
+      }
+      10% {
+          background-color: #00FFC2;
+        }
+      }
+      50% {
+        background-color: #FFFF00;
+      }
+      100% {
+        background-color: #40E0D0;
+      }
+    }
 
+    .animate-colors {
+      animation-name: changeColors;
+      animation-duration: 2s; /* duration of the animation */
+      animation-timing-function: ease-in-out; /* timing function for the animation */
+      animation-iteration-count: infinite; /* number of times the animation repeats, set to "infinite" for continuous looping */
+    }
+  `}
+</style>
 
