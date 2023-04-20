@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/index.css"; // Import your CSS file that contains the styles for Home component
+
 
 const Home = (props) => {
   return (
