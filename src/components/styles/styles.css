@@ -1,0 +1,28 @@
+/* Add this media query in your CSS file */
+@media (max-width: 767px) {
+    div {
+      width: 100vw;
+    }
+  }
+
+  @keyframes changeColors {
+    0% {
+      background-color: #00FF00;
+    }
+    10% {
+      background-color: #40E0D0;
+    }
+    50% {
+      background-color: #FFFF00;
+    }
+    100% {
+      background-color: #00FFC2;
+    }
+  }
+
+  .animate-colors {
+    animation-name: changeColors;
+    animation-duration: 2s; /* duration of the animation */
+    animation-timing-function: ease-in-out; /* timing function for the animation */
+    animation-iteration-count: infinite; /* number of times the animation repeats, set to "infinite" for continuous looping */
+  }
