@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../styles/styles.css"
 
 const tokenGoals = [
   { id: 1, title: '...', description: '...' ,  completed: false },
@@ -184,4 +185,3 @@ export default Home;
     }
   `}
 </style>
-
