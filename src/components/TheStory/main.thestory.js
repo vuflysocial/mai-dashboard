@@ -74,8 +74,8 @@ const thestory = () => {
         </div>
         <br />
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center",  }}>
-  <div style={{ maxWidth: "800px", padding: "0 20px" }}>
-    <h5 style={{ fontWeight: "bold", color: "black", textAlign: "center" }}>
+  <div style={{ maxWidth: "500px", padding: "0 20px" }}>
+    <h5 style={{ fontWeight: "bold", color: "grey", textAlign: "center" }}>
       Melo Inu was birthed on Canto Blockchain originally with a renounced contract and burned liquidity. We chose Canto because it was a new private blockchain that encouraged developer building to help expand the network. After 3 weeks of trading, the community suggested moving over to BSC for more volume, seeing as though Canto was a new chain, we decided to do so for the community. Now, because the contract was renounced and liquidity burned with no-upgradability, we were forced to launch the same contract on BSC and airdrop CANTO holders the new BSC Address. So yes, at this moment, there is a Melo Inu Canto contract as well as a BSC Contract.
     </h5>
     <h5 style={{ fontWeight: "bold", color: "black", textAlign: "center",  }}>
@@ -93,4 +93,3 @@ const thestory = () => {
 };
 
 export default thestory;
-
