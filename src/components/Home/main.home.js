@@ -1,5 +1,10 @@
 import React from "react";
 import styles from "../styles/styles.css"
+import 'animate.css';
+import { useState, useEffect } from "react";
+import TrackVisibility from 'react-on-screen';
+import { Container, Row, Col } from "react-bootstrap";
+
 
 const tokenGoals = [
   { id: 1, title: '...', description: '...' ,  completed: false },
@@ -12,15 +17,56 @@ const tokenGoals = [
 // Import your CSS file that contains the styles for Home component
 
 const Home = (props) => {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = [ "melo inu" ];
+  const period = 2000;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => { clearInterval(ticker) };
+  }, [text])
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta(prevDelta => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex(prevIndex => prevIndex - 1);
+      setDelta(period);
+    } else if (isDeleting && updatedText === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(500);
+    } else {
+      setIndex(prevIndex => prevIndex + 1);
+    }
+  }
   return (
-    <div
+    <div>
+        <div
       style={{
         backgroundImage: `url('')`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "150vh",
+        height: "160vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
@@ -65,13 +111,38 @@ const Home = (props) => {
           fontWeight: "bold", // added font weight property
         }}
       >
-        {props.title}
+        <div>
+        <Container>
+        <Row className="aligh-items-center">
+          <Col xs={12} md={6} xl={7}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+
+                <h1>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "melo inu" ]'><span className="wrap">{text}</span></span></h1>
+
+
+              </div>}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={6} xl={5}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+
+                </div>}
+            </TrackVisibility>
+          </Col>
+        </Row>
+        </Container>
+        </div>
+
       </h1>
       <div className="text-center" style={{ width: "60%" }}>
         <h1 className="font-md text-2xl md:text-7xl text-black" style={{ fontSize: "64px" }}>
           {props.description2}
         </h1>
-      </div>
+       </div>
       <p className="flex items-center text-center text-xs md:text-base text-grey-300 pt-3" style={{ color: "grey" }}>
         {props.description}
       </p>
@@ -152,6 +223,9 @@ const Home = (props) => {
     </div>
     </div>
     </div>
+
+  </div>
+
   );
 };
 
@@ -185,3 +259,4 @@ export default Home;
     }
   `}
 </style>
+
