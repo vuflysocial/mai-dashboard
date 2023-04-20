@@ -1,4 +1,13 @@
 import React from "react";
+
+const tokenGoals = [
+  { id: 1, title: '...', description: '...' ,  completed: false },
+  { id: 2, title: 'Redeem tokens for a gift', description: 'Description for Goal 2', completed: false },
+  { id: 3, title: 'Unlock premium features with tokens', description: 'Description for Goal 3', completed: false },
+  { id: 4, title: 'Reach 500 tokens', description: 'Description for Goal 4', completed: false },
+  { id: 5, title: 'Donate tokens to charity', description: 'Description for Goal 5', completed: false }
+];
+
 // Import your CSS file that contains the styles for Home component
 
 const Home = (props) => {
@@ -10,7 +19,7 @@ const Home = (props) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "130vh",
+        height: "150vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
@@ -107,6 +116,39 @@ const Home = (props) => {
           style={{ width: "100px", height: "100px", margin: "0 10px" }}
         />
       </div>
+    </div>
+    <br />
+    <div>
+
+    </div>
+    <br />
+    <br />
+    <br />
+    <div>
+    <div style={{ border: '1px solid #000', borderRadius: '8px', padding: '16px' }}>
+
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        {tokenGoals.map((goal, index) => (
+          <div
+            key={goal.id}
+            style={{
+              border: '1px solid #000',
+              borderRadius: '4px',
+              padding: '8px',
+              flex: '1',
+              marginRight: '8px',
+              backgroundColor: goal.completed ? '#e0e0e0' : '#fff',
+              filter: index === 0 ? 'none' : 'blur(8px)', // Apply blur to all but the first goal container
+            }}
+          >
+            <h2 style={{ margin: '0', fontSize: '18px', fontWeight: 'bold' }}>{goal.title}</h2>
+            <h4 style={{ margin: '0', fontSize: '8px', fontWeight: 'bold' }}>{goal.description}</h4>
+            <p style={{ margin: '8px 0 0 0' }}>...: 0%</p>
+            {/* You can add additional components or logic here to update token progress */}
+          </div>
+        ))}
+      </div>
+    </div>
     </div>
     </div>
   );
