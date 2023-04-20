@@ -31,14 +31,15 @@ export default function App() {
                   <Home
 
                     titleFont="canva sans"
-                    title="melo inu."
+                    title="melo inu"
                     size='height: 36px width: 36px'
                     description2="a way for the world to be melo."
-                    description="melo inu is a community coin here to help revouloutionize the crypto world.
+                    description="melo inu  is a community coin here to help revouloutionize the crypto world.
                      holders that are melo dont want to be the big dog on campus, they just want a piece of the action.
                      Through planned development of our ecosytem we aim to bring crypto to the real world."
-                    titleStyle={{ color: "white", fontWeight: "bold" }}
-                    descriptionStyle={{ color: "white", fontWeight: "bold" }}
+                     description3="partners"
+                    titleStyle={{ color: "black", fontWeight: "bold" }}
+                    descriptionStyle={{ color: "black", fontWeight: "bold" }}
 
                   />
                 }
@@ -61,10 +62,10 @@ export default function App() {
                   />
                 }
               />
-              
-              
+             
+              <Route path="/dash" element={<Dash />} />
               <Route path="/thestory" element={<TheStory />} />
-              
+              <Route path="/nfts" element={<NFTS />} />
               <Route path="/trade" element={<Trade />} />
               <Route path="/question" element={<FAQ />} />
             </Routes>
@@ -75,3 +76,4 @@ export default function App() {
     </MainLayouts>
   );
 }
+
