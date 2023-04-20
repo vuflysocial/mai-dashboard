@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/index.css"; // Import your CSS file that contains the styles for Home component
 
 const Home = (props) => {
   return (
@@ -21,11 +21,11 @@ const Home = (props) => {
       <div>
       {/* Add your tab links */}
       <div className="flex justify-center bg-white py-4">
-        <a href="#tab1" className="px-4 py-2 hover:bg-green-300">
-          ...
+        <a href="https://twitter.com/meloinu" className="px-4 py-2 hover:bg-green-300">
+          Twitter
         </a>
-        <a href="#tab2" className="px-4 py-2 hover:bg-yellow-300">
-          ...
+        <a href="https://t.me/meloinuofficial" className="px-4 py-2 hover:bg-yellow-300">
+          Telegram
         </a>
         <a href="#tab3" className="px-4 py-2 hover:bg-pink-300">
           ...
@@ -116,40 +116,4 @@ export default Home;
 
 
 
-
-
-
-
-
-
-
-
-// Define the CSS animation using a style block
-<style>
-
-  {`
-    @keyframes changeColors {
-      0% {
-        background-color: #00FF00;
-      }
-      10% {
-          background-color: #00FFC2;
-        }
-      }
-      50% {
-        background-color: #FFFF00;
-      }
-      100% {
-        background-color: #40E0D0;
-      }
-    }
-
-    .animate-colors {
-      animation-name: changeColors;
-      animation-duration: 2s; /* duration of the animation */
-      animation-timing-function: ease-in-out; /* timing function for the animation */
-      animation-iteration-count: infinite; /* number of times the animation repeats, set to "infinite" for continuous looping */
-    }
-  `}
-</style>
 
