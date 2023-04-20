@@ -1,39 +1,40 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
+import styles from "../styles/styles.css"
 
 const FAQ = () => {
   const lists = [
     {
-      question: "What can this website do?",
+      question: "...",
       li: false,
       answer:
-        "This website allows us to communicate with MAI AI and interact with the user dashboard",
-      color: "#fff",
+        "",
+      color: "#00FFC2",
     },
     {
-      question: "What can MAI do on this website?",
+      question: "Check back soon! maintenance is being done 🚧",
       li: true,
       answer: [
-        { list_answer: "MAI ChatGPT - Interacts with AI in a conversational way." },
+        { list_answer: "..." },
         {
           list_answer:
             "ME MAI - Create original, realistic images and art from a text description",
         },
       ],
-      color: "#fff",
+      color: "#FFFF00",
     },
     {
       question: "",
       li: false,
       answer: "",
-      color: "#fff",
+      color: "#40E0D0",
     },
     {
       question: "",
       answer:
         "",
-      color: "#fff",
+      color: "#00FF00",
     },
   ];
 
@@ -41,7 +42,7 @@ const FAQ = () => {
     <div
       style={{
         backgroundImage:
-          'url("//data.1freewallpapers.com/detail/gradient-green-texture-background.jpg")',
+          'url("")',
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
