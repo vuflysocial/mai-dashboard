@@ -221,82 +221,7 @@ const Home = (props) => {
         ))}
       </div>
       <div>
-        <div>
-        <div id="block-tokenomics-toggle" class="mt-12">
-    <nav class="flex justify-center">
-        <ul class="nav-pills">
-            <li>
-                <a href="#" class="w-32" data-id="binance">...</a>
-            </li>
 
-            <li>
-                <a href="#" class="w-32" data-id="canto">Binance</a>
-            </li>
-
-            <li>
-                <a href="#" class="w-32" data-id="polygon">SHINTO BNB</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div id="block-tokenomics-toggle-items-wrapper" class="mt-6">
-
-        <div class="block-tokenomics-toggle-items active" data-id="binance">
-            <div class="block-tokenomics-toggle-item animate show">
-                <div class="block-tokenomics-toggle-item-icon text-theme-600">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="block-tokenomics-toggle-items" data-id="canto">
-            <div class="block-tokenomics-toggle-item animate">
-                <div class="block-tokenomics-toggle-item-icon text-theme-600">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="block-tokenomics-toggle-items" data-id="polygon">
-            <div class="block-tokenomics-toggle-item animate">
-                <div class="block-tokenomics-toggle-item-icon text-theme-600">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <h3 class="mt-24" data-translate="tokenomics-contract-title">Our Contract</h3>
-
-    <hr class="center"></hr>
-
-    <div id="block-tokenomics-contract-addresses" class="mt-12">
-
-        <div class="block-tokenomics-contract-address active" data-id="binance">
-            <div class="block-tokenomics-contract-address-label">BSC</div>
-            <div id="block-tokenomics-contract-address-bsc" class="block-tokenomics-contract-address-value">0x5c12C812794B874fe4Fdea9A4960df599C89b8E5</div>
-            <div class="block-tokenomics-contract-address-copy">
-                <div class="clipboard no-underline" data-clipboard-target="#block-tokenomics-contract-address-bsc" data-text-default="Copy" data-text-success="Copied!" data-translate="tokenomics-copy">Copy</div>
-            </div>
-        </div>
-
-        <div class="block-tokenomics-contract-address" data-id="canto">
-            <div class="block-tokenomics-contract-address-label">BSC</div>
-            <div id="block-tokenomics-contract-address-canto" class="block-tokenomics-contract-address-value">0x5c12C812794B874fe4Fdea9A4960df599C89b8E5</div>
-            <div class="block-tokenomics-contract-address-copy">
-                <div class="clipboard no-underline" data-clipboard-target="#block-tokenomics-contract-address-canto" data-text-default="Copy" data-text-success="Copied!" data-translate="tokenomics-copy">Copy</div>
-            </div>
-        </div>
-
-        <div class="block-tokenomics-contract-address" data-id="polygon">
-            <div class="block-tokenomics-contract-address-label">BSC</div>
-
-            <div id="block-tokenomics-contract-address-polygon" class="block-tokenomics-contract-address-value">0xc42a67C3D7D5E387168b72Ccc555ee61838c7e33</div>
-
-            <div class="block-tokenomics-contract-address-copy">
-
-                                </div>
-                                <div>
 
 
                                 </div>
@@ -304,12 +229,10 @@ const Home = (props) => {
                         </div>
                     </div>
       </div>
-      </div>
-    </div>
-    </div>
-    </div>
 
-  </div>
+
+
+
 
   );
 };
