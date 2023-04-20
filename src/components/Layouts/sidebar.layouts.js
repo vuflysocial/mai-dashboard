@@ -13,6 +13,7 @@ import {
   faBolt,
   faBook,
   faHeadphones,
+
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
@@ -25,14 +26,11 @@ const Sidebar = () => {
     { title: "MAI", link: "/chatgpt", icon: "faMessage" },
     { title: "ME", link: "/dall-e", icon: "faImages" },
     { title: "The Story", link: "/thestory", icon: "faBook" },
-    { title: "Tending", link: "/nfts", icon: "faHeadphones" },
-    { title: "Trade", link: "/trade", icon: "faExchange" },
-    { title: "Charts", link: "/charts", icon: "faBarChart" },
-    { title: "MECO", link: "/charts", icon: "faBarChart" },
-    { title: "Telegram", link: "https://t.me/meloinuofficial", icon: "faQuestionCircle" },
+    { title: "Trending", link: "/nfts", icon: "faHeadphones" },
+    { title: "Trade", link: "/trade", icon: "faExchange" },,
     { title: "FAQs", link: "/question", icon: "faQuestionCircle" },
-    { title: "Twitter", link: "https://twitter.com/meloinu", icon: "faQuestionCircle" },
-    { title: "Telegram", link: "https://t.me/meloinuofficial", icon: "faQuestionCircle" },
+
+
 
   ];
 
@@ -186,8 +184,9 @@ const Sidebar = () => {
           </div>
           <div className={`${!open && "hidden"}`}>
             <p className={`mb-3 text-xs md:text-sm`}>
-              Please don't share any sensitive information in your
-              conversations.
+              welcome to melo inu where everything is melo.
+              website is updated in real time. you can exit this
+              message at any time.
             </p>
             <a
               className="text-xs md:text-sm underline"
@@ -205,3 +204,4 @@ const Sidebar = () => {
 };
 
 export { Sidebar };
+
