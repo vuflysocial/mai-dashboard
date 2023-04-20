@@ -11,7 +11,7 @@ const Trade = () => {
     <div
       style={{
         backgroundImage:
-          'url("//data.1freewallpapers.com/detail/gradient-green-texture-background.jpg")',
+          'url("")',
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -54,7 +54,7 @@ const Trade = () => {
           <iframe
             width="100%"
             height="315"
-            src="https://www.youtube.com/meloinu/embed/dQw4w9WgXcQ"
+            src="https://www.youtube.com/embed/1ls8f2OKzW8"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -67,4 +67,3 @@ const Trade = () => {
 };
 
 export default Trade;
-
