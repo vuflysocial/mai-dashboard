@@ -1,8 +1,43 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
+import styles from "../styles/styles.css"
 
 const thestory = () => {
+  const lists = [
+    {
+      question: "What if the roles were reversed and Shiba Inu was a cat Meet MELO INU, a clone of Shiba Inu, created with a twist, he  a cat To continue reading the story of Melo Inu",
+      li: false,
+      answer:
+        " Click Me 0x0958093f4bbf679e5898a46215d2ecb400ce4c67",
+      color: "#00FFC2",
+    },
+    {
+      question: "Melo Inu was birthed on Canto Blockchain originally with a renounced contract and burned liquidity. We chose Canto because it was a new private blockchain that encouraged developer building to help expand the network. After 3 weeks of trading, the community suggested moving over to BSC for more volume, seeing as though Canto was a new chain, we decided to do so for the community. Now, because the contract was renounced and liquidity burned with no-upgradability, we were forced to launch the same contract on BSC and airdrop CANTO holders the new BSC Address. So yes, at this moment, there is a Melo Inu Canto contract as well as a BSC Contract.",
+      li: true,
+      answer: [
+        { list_answer: "..." },
+        {
+          list_answer:
+            "ME MAI - Create original, realistic images and art from a text description",
+        },
+      ],
+      color: "#FFFF00",
+    },
+    {
+      question: "MAI was the AI token in our ecosystem on CANTO that the community agreed upon sacrificing the liquidity to help us start the Melo Liquid Protocol, the Kami Shinto. All 15 original OG Holders from the launch of MAI were snapshotted and will be Airdropped the Equivalent amount in SHINTO by 4/15. Melo AI Dapp is still live as utility and can be accessed on the dashboard.",
+      li: false,
+      answer: "",
+      color: "#40E0D0",
+    },
+    {
+      question: "As the Melo and Canto Ecosystem grow, eventually, so will Melo Canto. Melo Inu Canto will remain live on Canto as a safe meme to turn to in the early stages of the Canto network. We will find ways to innovate in every place we are.",
+      answer:
+        "",
+      color: "#00FF00",
+    },
+  ];
+
   return (
     <div
       style={{
@@ -12,7 +47,7 @@ const thestory = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "130vh",
+        height: "100vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
@@ -20,76 +55,44 @@ const thestory = () => {
         flexDirection: "column",
       }}
     >
-      <div>
-        <h1 style={{ fontWeight: "bold", color: "black" }}>
-          The Original Story
-        </h1>
-        <h4 style={{ color: "black" }}>
-          What if the roles were reversed and Shiba Inu was a cat?
-          Meet MELO INU, a clone of Shiba Inu, created with a twist,
-          he&apos;s a cat!...
-          To continue reading the story of Melo Inu
-        </h4>
-
-        <p>
-        <a
-          href="https://melo-inu.gitbook.io/whitepaper/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:bg-green-300"
-          style={{ color: "black", fontWeight: "bold" }}
-        >
-          CLICK HERE
-        </a>{" "}
-        <b></b> <i></i>.
-      </p>
-
-        <br />
-        <h4 style={{ color: "black" }}>Melo Inu CANTO</h4>
-        <div>
-          <img
-            src="/favicon (2).ico"
-            width={360}
-            height={340}
-            alt="Hero asset, NFT marketplace"
-            quality={100}
-          />
-          <div>
-          <div className="flex justify-center bg-white py-4">
-        <p>
-          <a
-            href="https://www.dextools.io/app/en/canto/pair-explorer/0x0958093f4bbf679e5898a46215d2ecb400ce4c67"
-            className="px-4 py-2 hover:bg-green-300"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "black", fontWeight: "bold" }}
-          >
-            Click Me 0x0958093f4bbf679e5898a46215d2ecb400ce4c67
-          </a>{" "}
-          <b></b> <i></i>.
-        </p>
-      </div>
-
-        </div>
-        </div>
-        <br />
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center",  }}>
-  <div style={{ maxWidth: "500px", padding: "0 20px" }}>
-    <h5 style={{ fontWeight: "bold", color: "grey", textAlign: "center" }}>
-      Melo Inu was birthed on Canto Blockchain originally with a renounced contract and burned liquidity. We chose Canto because it was a new private blockchain that encouraged developer building to help expand the network. After 3 weeks of trading, the community suggested moving over to BSC for more volume, seeing as though Canto was a new chain, we decided to do so for the community. Now, because the contract was renounced and liquidity burned with no-upgradability, we were forced to launch the same contract on BSC and airdrop CANTO holders the new BSC Address. So yes, at this moment, there is a Melo Inu Canto contract as well as a BSC Contract.
-    </h5>
-    <h5 style={{ fontWeight: "bold", color: "black", textAlign: "center",  }}>
-      MAI was the AI token in our ecosystem on CANTO that the community agreed upon sacrificing the liquidity to help us start the Melo Liquid Protocol, the Kami Shinto. All 15 original OG Holders from the launch of MAI were snapshotted and will be Airdropped the Equivalent amount in SHINTO by 4/15. Melo AI Dapp is still live as utility and can be accessed on the dashboard.
-    </h5>
-    <h5 style={{ fontWeight: "bold", color: "black", textAlign: "center",  }}>
-      As the Melo and Canto Ecosystem grow, eventually, so will Melo Canto. Melo Inu Canto will remain live on Canto as a safe meme to turn to in the early stages of the Canto network. We will find ways to innovate in every place we are.
-    </h5>
-  </div>
-</div>
-
+      <br />
+      <br />
+      <br />
+      <div className="p-2 mt-2">
+        {lists.map((list, index) => (
+          <div key={index} className="mb-5 mt-5">
+            <div
+              className="border-2 border-black px-3 py-2 rounded-lg"
+              style={{
+                boxShadow: "0.4rem 0.4rem 0 #222",
+                backgroundColor: list.color,
+              }}
+            >
+              <h1 className="text-black text-base md:text-2xl">
+                {list.question}
+              </h1>
+            </div>
+            <div className="mt-3 text-white-600 text-xs md:text-base">
+              {!list.li ? (
+                <>
+                  <span>{list.answer}</span>
+                </>
+              ) : (
+                <>
+                  <ul style={{ listStyleType: "circle" }}>
+                    {list.answer.map((ans, index) => (
+                      <li key={index}>{ans.list_answer}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
 export default thestory;
+
