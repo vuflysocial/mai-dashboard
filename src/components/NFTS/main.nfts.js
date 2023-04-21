@@ -45,7 +45,7 @@ const nfts = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "100vh",
+        height: "101vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
