@@ -10,7 +10,7 @@ import FAQ from "./components/FAQ/main.faq";
 import Dash from "./components/Dash/main.dash";
 import Trade from "./components/Trade/main.trade";
 import NFTS from "./components/NFTS/main.nfts";
-import Tokenomics from "./components/tokenomics/main.tokenomics";
+
 import Studyai from "./components/studyai/main.studyai";
 import TheStory from "./components/TheStory/main.thestory";
 import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
