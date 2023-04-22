@@ -66,7 +66,7 @@ const Home = (props) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "160vh",
+        height: "180vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
@@ -86,6 +86,9 @@ const Home = (props) => {
         <a href="#tab3" className="px-4 py-2 hover:bg-pink-300">
           ...
         </a>
+        <a href="#tab4" className="px-4 py-2 hover:bg-pink-300">
+          ...
+        </a>
       </div>
 
       {/* Add your tab content */}
@@ -99,8 +102,22 @@ const Home = (props) => {
         <div id="tab3" className="tab-content">
           {/* Content for Tab 3 */}
         </div>
+        <div id="tab4" className="tab-content">
+          {/* Content for Tab  */}
+        </div>
       </div>
     </div>
+
+    <a href="https://meloai.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <button
+          type="button"
+          className="mt-5 w-36 md:w-52 md:h-15 md:text-2xl font-medium rounded-lg px-5 py-2.5 border-2 border-black shadow-lg text-center mr-2 mb-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-green text-dark animate-colors"
+          // Add "animate-colors" class to enable the change colors animation
+          style={{ boxShadow: "0.4rem 0.4rem 0 #222" }}
+        >
+          Melo AI (MAI) Ask Melo
+        </button>
+      </a>
 
       <div className={`flex items-center`}></div>
       <h1
