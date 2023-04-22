@@ -11,7 +11,7 @@ import Dash from "./components/Dash/main.dash";
 import Trade from "./components/Trade/main.trade";
 import NFTS from "./components/NFTS/main.nfts";
 
-import Studyai from "./components/studyai/main.studyai";
+
 import TheStory from "./components/TheStory/main.thestory";
 import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
 import "./App.css"; // Import the CSS file for the animations
@@ -65,8 +65,7 @@ export default function App() {
               />
 
               <Route path="/dash" element={<Dash />} />
-              <Route path="/studyai" element={<Studyai />} />
-              <Route path="/tokenomics" element={<Tokenomics />} />
+             
               <Route path="/thestory" element={<TheStory />} />
               <Route path="/nfts" element={<NFTS />} />
               <Route path="/trade" element={<Trade />} />
