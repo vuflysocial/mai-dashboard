@@ -23,8 +23,6 @@ const Sidebar = () => {
   const [attention, setAttention] = useState(true);
   const menus = [
     { title: "Home", link: "/", icon: "faHouse" },
-    { title: "MAI", link: "/chatgpt", icon: "faMessage" },
-    { title: "ME", link: "/dall-e", icon: "faImages" },
     { title: "The Story", link: "/thestory", icon: "faBook" },
     { title: "Trending", link: "/nfts", icon: "faHeadphones" },
     { title: "Trade", link: "/trade", icon: "faExchange" },,
