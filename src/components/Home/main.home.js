@@ -7,12 +7,13 @@ import { Container, Row, Col } from "react-bootstrap";
 
 
 const tokenGoals = [
-  { id: 1, title: '', description: 'Melo Tokenomics' ,  completed: true },
-  { id: 2, title: 'Redeem tokens for a gift', description: 'Description for Goal 2', completed: false },
-  { id: 3, title: 'Unlock premium features with tokens', description: 'Description for Goal 3', completed: false },
-  { id: 4, title: 'Reach 500 tokens', description: 'Description for Goal 4', completed: false },
-  { id: 5, title: 'Donate tokens to charity', description: 'Description for Goal 5', completed: false }
+  { id: 1, title: '', description: '0/0' ,  completed: true },
+  { id: 2, title: 'Shinto ', description: '3/3 ', completed: false },
+
+
 ];
+
+
 
 // Import your CSS file that contains the styles for Home component // dog cage https://mjdc.vercel.app/
 
@@ -57,6 +58,20 @@ const Home = (props) => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
         <div
@@ -175,6 +190,7 @@ const Home = (props) => {
         </button>
       </a>
 
+
       <a href="https://melo-inu.gitbook.io/whitepaper/" target="_blank" rel="noopener noreferrer">
         <button
           type="button"
@@ -186,6 +202,12 @@ const Home = (props) => {
         </button>
       </a>
       {/* Add the small image at the bottom */}
+<br/>
+<br/>
+<a href="/trade" target="_blank" rel="noopener noreferrer">
+<button>Buy $MELO <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="25" height="25" fill="currentColor"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path></svg></button>
+</a>
+
       <br/>
       <p className="flex items-center text-center text-xs md:text-base text-grey-300 pt-3" style={{ color: "grey" }}>
         {props.description3}
@@ -391,6 +413,40 @@ const Home = (props) => {
     </section>
 
     </Container>
+    <br/>
+    <br/>
+    <div>
+      <h1
+      className="text-2xl md:text-7xl text-black"> Trending Artist</h1>
+    </div>
+
+    <div className="circle-images-container">
+      <div className="circle-image">
+        <img src="haller.jpg" alt="Circle 1" className="circle-img" />
+        <button>Haller.</button>
+      </div>
+      <div className="circle-image">
+        <img src="vibe.jpg" alt="Circle 2" className="circle-img" />
+        <button>Vibe</button>
+      </div>
+      <div className="circle-image ">
+        <img src="circle-3.jpg" alt="Dotty Ca$h" className="circle-img" />
+        <button>Dotty Ca$h</button>
+      </div>
+      <div className="circle-image">
+        <img src="loading..." alt="..." className="circle-img" />
+        <a href="/apply" target="_blank" rel="noopener noreferrer">
+        <button
+          type="button"
+          className="mt-5 w-36 md:w-52 md:h-15 md:text-2xl font-medium rounded-lg px-5 py-2.5 border-2 border-black shadow-lg text-center mr-2 mb-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-green text-dark animate-colors"
+          // Add "animate-colors" class to enable the change colors animation
+          style={{ boxShadow: "0.4rem 0.4rem 0 #222" }}
+        >
+          Wanna be a trending melo artist?
+        </button>
+      </a>
+      </div>
+    </div>
 
 
     </div>
@@ -411,18 +467,19 @@ const Home = (props) => {
               flex: '1',
               marginRight: '8px',
               backgroundColor: goal.completed ? '#e0e0e0' : '#fff',
-              filter: index === 0 ? 'none' : 'blur(8px)', // Apply blur to all but the first goal container
+              // Apply blur to all but the first goal container
             }}
           >
             <h2 style={{ margin: '0', fontSize: '18px', fontWeight: 'bold' }}>{goal.title}Tokenomics</h2>
-            <h4 style={{ margin: '0', fontSize: '8px', fontWeight: 'bold' }}>{goal.description}</h4>
-            <p style={{ margin: '8px 0 0 0' }}>Tax 0%</p>
+            <h4 style={{ margin: '0', fontSize: '14px', fontWeight: 'bold' }}>{goal.description}</h4>
+            <p style={{ margin: '8px 0 0 0' }}>Tax %</p>
             {/* You can add additional components or logic here to update token progress */}
           </div>
         ))}
       </div>
 
       <div>
+
 
 </div>
 
