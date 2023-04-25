@@ -10,8 +10,6 @@ import FAQ from "./components/FAQ/main.faq";
 import Dash from "./components/Dash/main.dash";
 import Trade from "./components/Trade/main.trade";
 import NFTS from "./components/NFTS/main.nfts";
-
-
 import TheStory from "./components/TheStory/main.thestory";
 import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
 import "./App.css"; // Import the CSS file for the animations
@@ -34,10 +32,10 @@ export default function App() {
                     title="melo inu"
                     size='height: 36px width: 36px'
                     description2="dashboard."
-                    description="melo inu  is a community coin here to help revouloutionize the crypto world.
-                     holders that are melo dont want to be the big dog on campus, they just want a piece of the action. and you can have a piece of the
-                     action by having a melo ai powered chat assistant. your personal assistant powered by the OpenAI model Api.
-                     Through planned development of our ai ecosytem  we aim to bring crypto to the real world."
+                    description="melo inu is a fused tabby cat with shiba inu. (you can read of how our tabby became fused with shiba from the paws of our cat scientist shittoshi catama from the whitepaper link below). melo inu was created as a community coin here to help revouloutionize the crypto world.
+                     holders that are melo dont want to be the big dog on campus.. we got shib, volt, doge, and floki already.. yeah see, melo holders are real cool `cats`. they all love life, music, kids, fun/games, events, dogs, and they just want a piece of the action. and you can have a piece of the
+                     action by holding melo.
+                     Through planned development of our NFT club and ai powered ecosytem. we aim to bring crypto to the real world."
                      description3="partners"
                     titleStyle={{ color: "black", fontWeight: "bold" }}
                     descriptionStyle={{ color: "black", fontWeight: "bold" }}
@@ -65,7 +63,7 @@ export default function App() {
               />
 
               <Route path="/dash" element={<Dash />} />
-             
+
               <Route path="/thestory" element={<TheStory />} />
               <Route path="/nfts" element={<NFTS />} />
               <Route path="/trade" element={<Trade />} />
@@ -78,4 +76,3 @@ export default function App() {
     </MainLayouts>
   );
 }
-
