@@ -24,7 +24,7 @@ const Sidebar = () => {
   const menus = [
     { title: "Home", link: "/", icon: "faHouse" },
     { title: "The Story", link: "/thestory", icon: "faBook" },
-    { title: "Trending", link: "/nfts", icon: "faHeadphones" },
+    { title: "Trending (NEW)", link: "/nfts", icon: "faHeadphones" },
     { title: "Trade", link: "/trade", icon: "faExchange" },,
     { title: "FAQs", link: "/question", icon: "faQuestionCircle" },
 
