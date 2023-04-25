@@ -14,7 +14,7 @@ const tokenGoals = [
   { id: 5, title: 'Donate tokens to charity', description: 'Description for Goal 5', completed: false }
 ];
 
-// Import your CSS file that contains the styles for Home component
+// Import your CSS file that contains the styles for Home component // dog cage https://mjdc.vercel.app/
 
 const Home = (props) => {
   const [loopNum, setLoopNum] = useState(0);
@@ -66,7 +66,7 @@ const Home = (props) => {
         backgroundSize: "",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "180vh",
+        height: "470vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
@@ -84,7 +84,7 @@ const Home = (props) => {
           Telegram
         </a>
         <a href="#tab3" className="px-4 py-2 hover:bg-pink-300">
-          ...
+          Medium
         </a>
         <a href="#tab4" className="px-4 py-2 hover:bg-pink-300">
           ...
@@ -207,7 +207,191 @@ const Home = (props) => {
       </div>
     </div>
     <br />
+    <h1 className="mt-5 w-36 md:w-52 md:h-15 md:text-3xl">Melo JackedUp Dog Cage Club NFTs</h1>
+
     <div>
+
+    <Container className="border-container rounded-lg px-5 py-2.5 border-2 border-black shadow-lg ">
+
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <button
+      type="button"
+      className="mt-5 w-36 md:w-52 md:h-15 md:text-2xl font-medium rounded-lg px-5 py-2.5 border-2 border-black shadow-lg text-center mr-2 mb-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-green text-dark animate-colors"
+      style={{ boxShadow: "0.4rem 0.4rem 0 #222" }}>
+
+        The Dog Cage site (currently under construction 🚧)</button></a>
+  <div className="slider-container">
+    <div className="slider-item">
+      <img src="shintodog.gif" alt="Image 1" />
+    </div>
+    <div className="slider-item">
+      <img src="volt.gif" alt="Image 2" />
+    </div>
+    <div className="slider-item">
+      <img src="dogmelo.gif" alt="Image 3" />
+    </div>
+  </div>
+</Container>
+<br/>
+<Container className="border-container rounded-lg px-5 py-2.5 border-2 border-black shadow-lg ">
+<div class="roadmap" style={{ display: "inline-block" }}>
+<section class="roadmap">
+  <div class="container">
+    <h2 class="border-container  rounded-lg px-5 py-2.5 border-2 border-black shadow-lg roadmap__title md:text-2xl font-medium">Phase 1</h2>
+    <div class="roadmap__item">
+      <div class="roadmap__icon">
+
+      </div>
+      <div class="roadmap__details">
+        <h3 class="roadmap__stage-title md:text-xl font-medium ">Telegram ✔️</h3>
+        <p class="roadmap__stage-description">Launch of telegram chat</p>
+      </div>
+    </div>
+    <div class="roadmap__item">
+      <div class="roadmap__icon">
+
+      </div>
+      <div class="roadmap__details">
+        <h3 class="roadmap__stage-title md:text-xl font-medium">Twitter ✔️</h3>
+        <p class="roadmap__stage-description">Launch of Twitter profile</p>
+      </div>
+    </div>
+    <div class="roadmap__item">
+      <div class="roadmap__icon">
+
+      </div>
+      <div class="roadmap__details">
+        <h3 class="roadmap__stage-title md:text-xl font-medium">Fairlaunch ✔️</h3>
+        <p class="roadmap__stage-description">melo inu was launched with no presale or private sale</p>
+      </div>
+    </div>
+    </div>
+<div>
+  <div>
+    <div class="roadmap__details">
+        <h2 class="roadmap__stage-title md:text-xl font-medium">Website Release ✔️</h2>
+        <p class="roadmap__stage-description">website development and updates/upgrades</p>
+      </div>
+    </div>
+    </div>
+
+    <div>
+  <div>
+    <div class="roadmap__details">
+        <h2 class="roadmap__stage-title md:text-xl font-medium">Contract Verification ✔️</h2>
+        <p class="roadmap__stage-description">website development and updates/upgrades</p>
+      </div>
+    </div>
+    </div>
+
+    <div>
+  <div>
+    <div class="roadmap__details">
+        <h2 class="roadmap__stage-title md:text-xl font-medium">MAI ask melo Chat assistant ✔️</h2>
+        <p class="roadmap__stage-description">AI chat application powered by OpenAI API</p>
+      </div>
+    </div>
+    </div>
+
+    <div>
+  <div>
+    <div class="roadmap__details">
+        <h2 class="roadmap__stage-title md:text-xl font-medium">Shopify Merchandise ✔️</h2>
+        <p class="roadmap__stage-description">shopify store connected to the mecosytem</p>
+      </div>
+    </div>
+    </div>
+
+    <div>
+  <div>
+    <div class="roadmap__details">
+        <h2 class="roadmap__stage-title md:text-xl font-medium">500 Holders 🚧</h2>
+        <p class="roadmap__stage-description">organically reach 500 holders through outside building and community</p>
+      </div>
+    </div>
+    </div>
+    </section>
+    </div>
+  <div class="roadmap" style={{ display: "inline-block" }}></div>
+  <section class="roadmap">
+  <div class="container">
+    <h2 class="border-container  rounded-lg px-5 py-2.5 border-2 border-black shadow-lg roadmap__title md:text-2xl font-medium">Phase 2</h2>
+    <div class="roadmap__item">
+      <div class="roadmap__icon">
+
+      </div>
+      <div class="roadmap__details">
+        <h3 class="roadmap__stage-title md:text-xl font-medium ">...</h3>
+        <p class="roadmap__stage-description">...</p>
+      </div>
+    </div>
+    <div class="roadmap__item">
+      <div class="roadmap__icon">
+
+      </div>
+      <div class="roadmap__details">
+        <h3 class="roadmap__stage-title md:text-xl font-medium">...</h3>
+        <p class="roadmap__stage-description">...</p>
+      </div>
+    </div>
+    <div class="roadmap__item">
+      <div class="roadmap__icon">
+
+      </div>
+      <div class="roadmap__details">
+        <h3 class="roadmap__stage-title md:text-xl font-medium">...</h3>
+        <p class="roadmap__stage-description">...</p>
+      </div>
+    </div>
+    </div>
+<div>
+  <div>
+    <div class="roadmap__details">
+        <h2 class="roadmap__stage-title md:text-xl font-medium">...</h2>
+        <p class="roadmap__stage-description">...</p>
+      </div>
+    </div>
+    </div>
+
+    <div>
+  <div>
+    <div class="roadmap__details">
+        <h2 class="roadmap__stage-title md:text-xl font-medium">...</h2>
+        <p class="roadmap__stage-description">...</p>
+      </div>
+    </div>
+    </div>
+
+    <div>
+  <div>
+    <div class="roadmap__details">
+        <h2 class="roadmap__stage-title md:text-xl font-medium">...</h2>
+        <p class="roadmap__stage-description">...</p>
+      </div>
+    </div>
+    </div>
+
+    <div>
+  <div>
+    <div class="roadmap__details">
+        <h2 class="roadmap__stage-title md:text-xl font-medium">...</h2>
+        <p class="roadmap__stage-description">...</p>
+      </div>
+    </div>
+    </div>
+
+    <div>
+  <div>
+    <div class="roadmap__details">
+        <h2 class="roadmap__stage-title md:text-xl font-medium">...</h2>
+        <p class="roadmap__stage-description">...</p>
+      </div>
+    </div>
+    </div>
+    </section>
+
+    </Container>
+
 
     </div>
     <br />
@@ -237,7 +421,11 @@ const Home = (props) => {
           </div>
         ))}
       </div>
+
       <div>
+
+</div>
+
 
 
 
@@ -245,7 +433,7 @@ const Home = (props) => {
                             </div>
                         </div>
                     </div>
-      </div>
+
 
 
 
