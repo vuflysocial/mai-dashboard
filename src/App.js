@@ -63,7 +63,6 @@ export default function App() {
               />
 
               <Route path="/dash" element={<Dash />} />
-
               <Route path="/thestory" element={<TheStory />} />
               <Route path="/nfts" element={<NFTS />} />
               <Route path="/trade" element={<Trade />} />
@@ -76,3 +75,4 @@ export default function App() {
     </MainLayouts>
   );
 }
+
