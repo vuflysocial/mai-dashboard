@@ -81,7 +81,7 @@ const Home = (props) => {
         backgroundSize: "",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "470vh",
+        height: "550vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
@@ -139,15 +139,15 @@ const Home = (props) => {
       <h1
         className="font-md font-semibold text-3xl md:text-7xl text-black" // updated font weight to "semibold"
         style={{
-          fontSize: "94px",
+          fontSize: "84px",
+          textAlign: "center",
           fontFamily: "Canva Sans", // replace with your desired font name
           fontWeight: "bold", // added font weight property
-               textAlign: "center",
         }}
       >
         <div>
         <Container>
-        <Row className="aligh-items-center">
+        <Row className="aligh-items-center ">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
@@ -442,6 +442,12 @@ const Home = (props) => {
         <button>Dotty Ca$h</button>
         </a>
       </div>
+      <div className="circle-image ">
+        <img src="circle-3.jpg" alt="Pammy Hilton" className="circle-img" />
+        <a href="/nfts">
+        <button>Pammy Hilton</button>
+        </a>
+      </div>
       <div className="circle-image">
         <img src="loading..." alt="..." className="circle-img" />
         <a href="/apply" target="_blank" rel="noopener noreferrer">
@@ -539,4 +545,3 @@ export default Home;
     }
   `}
 </style>
-
