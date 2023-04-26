@@ -99,7 +99,7 @@ const Home = (props) => {
         <a href="https://t.me/meloinuofficial" className="px-4 py-2 hover:bg-yellow-300">
           Telegram
         </a>
-        <a href="#tab3" className="px-4 py-2 hover:bg-pink-300">
+        <a href="https://medium.com/@MELOINU" className="px-4 py-2 hover:bg-pink-300">
           Medium
         </a>
         <a href="#tab4" className="px-4 py-2 hover:bg-pink-300">
