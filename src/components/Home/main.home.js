@@ -7,8 +7,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 
 const tokenGoals = [
-  { id: 1, title: '', description: '0/0' ,  completed: true },
-  { id: 2, title: 'Shinto ', description: '3/3 ', completed: false },
+  { id: 1, title: 'melo ', description: '0/0' ,  completed: true },
+  { id: 2, title: 'shinto ', description: '3/3 ', completed: false },
 
 
 ];
@@ -81,7 +81,7 @@ const Home = (props) => {
         backgroundSize: "",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "470vh",
+        height: "500vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
@@ -335,86 +335,18 @@ const Home = (props) => {
     </div>
     </div>
     </section>
-    </div>
-  <div class="roadmap" style={{ display: "inline-block" }}></div>
-  <section class="roadmap">
-  <div class="container">
-    <h2 class="border-container  rounded-lg px-5 py-2.5 border-2 border-black shadow-lg roadmap__title md:text-2xl font-medium">Phase 2</h2>
-    <div class="roadmap__item">
-      <div class="roadmap__icon">
+   </div>
+   </Container>
 
-      </div>
-      <div class="roadmap__details">
-        <h3 class="roadmap__stage-title md:text-xl font-medium ">...</h3>
-        <p class="roadmap__stage-description">...</p>
-      </div>
-    </div>
-    <div class="roadmap__item">
-      <div class="roadmap__icon">
 
-      </div>
-      <div class="roadmap__details">
-        <h3 class="roadmap__stage-title md:text-xl font-medium">...</h3>
-        <p class="roadmap__stage-description">...</p>
-      </div>
-    </div>
-    <div class="roadmap__item">
-      <div class="roadmap__icon">
 
-      </div>
-      <div class="roadmap__details">
-        <h3 class="roadmap__stage-title md:text-xl font-medium">...</h3>
-        <p class="roadmap__stage-description">...</p>
-      </div>
-    </div>
-    </div>
-<div>
-  <div>
-    <div class="roadmap__details">
-        <h2 class="roadmap__stage-title md:text-xl font-medium">...</h2>
-        <p class="roadmap__stage-description">...</p>
-      </div>
-    </div>
-    </div>
 
-    <div>
-  <div>
-    <div class="roadmap__details">
-        <h2 class="roadmap__stage-title md:text-xl font-medium">...</h2>
-        <p class="roadmap__stage-description">...</p>
-      </div>
-    </div>
-    </div>
 
-    <div>
-  <div>
-    <div class="roadmap__details">
-        <h2 class="roadmap__stage-title md:text-xl font-medium">...</h2>
-        <p class="roadmap__stage-description">...</p>
-      </div>
-    </div>
-    </div>
 
-    <div>
-  <div>
-    <div class="roadmap__details">
-        <h2 class="roadmap__stage-title md:text-xl font-medium">...</h2>
-        <p class="roadmap__stage-description">...</p>
-      </div>
-    </div>
-    </div>
 
-    <div>
-  <div>
-    <div class="roadmap__details">
-        <h2 class="roadmap__stage-title md:text-xl font-medium">...</h2>
-        <p class="roadmap__stage-description">...</p>
-      </div>
-    </div>
-    </div>
-    </section>
 
-    </Container>
+
+
     <br/>
     <br/>
     <Container className="border-container rounded-lg px-5 py-2.5 border-2 border-black shadow-lg ">
@@ -493,15 +425,11 @@ const Home = (props) => {
           </div>
         ))}
       </div>
-
       <div>
-
-
+      <div className="slider-item">
+      <img src="mento.gif" alt="Image 3" />
+    </div>
 </div>
-
-
-
-
                                 </div>
                             </div>
                         </div>
