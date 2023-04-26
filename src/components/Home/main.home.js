@@ -83,7 +83,7 @@ const Home = (props) => {
         backgroundSize: "",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "500vh",
+        height: "550vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
@@ -93,7 +93,8 @@ const Home = (props) => {
       }}
     >
       <div>
-      <div className="mt-5 w-36 md:w-52 md:h-15 md:text-2xl font-medium rounded-lg text-center">
+      <div className="mt-5 w-36 md:w-52 md:h-15 md:text-2xl font-medium rounded-lg text-center"
+      >
       <button  onClick={handleButtonClick}>⬇️</button>
       <div id="my-element"></div>
     </div>
@@ -387,7 +388,8 @@ const Home = (props) => {
         <button>Pammy Hilton</button>
         </a>
       </div>
-<div className="circle-image ">
+
+      <div className="circle-image ">
         <img src="chance.jpg" alt="Chance The Rapper" className="circle-img" />
         <a href="/nfts">
         <button>Chance The Rapper</button>
