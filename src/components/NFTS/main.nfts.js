@@ -48,6 +48,24 @@ const nfts = () => {
             <br />
             <div>
               <SocialCard
+                title="Pammy Hilton"
+                img="openai.png"
+                icon={faPaperclip}
+                width="560px"
+                height="315px"
+              >
+                <iframe
+                  width="360"
+                  height="215"
+                  src="https://www.youtube.com/embed/blRu4KKhiOI"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </SocialCard>
+            </div>
+            <div>
+              <SocialCard
                 title="Haller"
                 img="openai.png"
                 icon={faPaperclip}
@@ -112,5 +130,4 @@ const nfts = () => {
 };
 
 export default nfts;
-
 
