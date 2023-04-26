@@ -387,6 +387,12 @@ const Home = (props) => {
         <button>Pammy Hilton</button>
         </a>
       </div>
+<div className="circle-image ">
+        <img src="chance.jpg" alt="Chance The Rapper" className="circle-img" />
+        <a href="/nfts">
+        <button>Chance The Rapper</button>
+        </a>
+      </div>
       <div className="circle-image">
         <img src="loading..." alt="..." className="circle-img" />
         <a href="/apply" target="_blank" rel="noopener noreferrer">
