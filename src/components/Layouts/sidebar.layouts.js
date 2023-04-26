@@ -13,6 +13,8 @@ import {
   faBolt,
   faBook,
   faHeadphones,
+  faCheckCircle,
+  faTelevision,
 
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
@@ -23,10 +25,14 @@ const Sidebar = () => {
   const [attention, setAttention] = useState(true);
   const menus = [
     { title: "Home", link: "/", icon: "faHouse" },
+
     { title: "The Story", link: "/thestory", icon: "faBook" },
+    { title: "Tv", link: "/tv", icon: "faTelevision" },
+
     { title: "Trending (NEW)", link: "/nfts", icon: "faHeadphones" },
     { title: "Trade", link: "/trade", icon: "faExchange" },,
     { title: "FAQs", link: "/question", icon: "faQuestionCircle" },
+
 
 
 
@@ -34,6 +40,10 @@ const Sidebar = () => {
 
   const handleIcon = (icon) => {
     switch (icon) {
+      case "faTelevision":
+        return faTelevision;
+      case "faCheckCircle":
+        return faCheckCircle;
       case "faHeadphones":
         return faHeadphones;
       case "faBook":
@@ -202,4 +212,5 @@ const Sidebar = () => {
 };
 
 export { Sidebar };
+
 
