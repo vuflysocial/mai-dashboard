@@ -33,7 +33,7 @@
       background-color: #3a963a;
     }
     10% {
-      background-color: #147709;
+      background-color: #617709;
     }
     50% {
       background-color: #147709;
@@ -55,5 +55,60 @@
     animation-duration: 2s; /* duration of the animation */
     animation-timing-function: ease-in-out; /* timing function for the animation */
     animation-iteration-count: infinite; /* number of times the animation repeats, set to "infinite" for continuous looping */
+  }
+
+  .border-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider-item {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+
+  .slider-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .circle-images-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .circle-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .buy-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+  .buy-button.scroll {
+    position: absolute;
   }
 
