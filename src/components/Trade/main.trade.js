@@ -10,18 +10,19 @@ const Trade = () => {
   return (
     <div
       style={{
-        backgroundImage:
+        background:
           'url("")',
-        backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundPosition: "top",
+        backgroundSize: "",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "115vh",
+        height: "285vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        overflow: "auto", // add overflow property to container
       }}
     >
       <div style={{ zIndex: 1, textAlign: "center", padding: "1rem" }}>
@@ -38,17 +39,16 @@ const Trade = () => {
         </div>
       </div>
       <br />
-      <div className="flex" style={{ zIndex: 1, textAlign: "center" }}>
-        <div className="w-full">
+      <div className="flex flex-col" style={{ zIndex: 1, textAlign: "center" }}>
+        <div className="w-full mb-10">
           <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
           <iframe
             src="https://voltichange.net/api/widget/?chain=56&darktheme=false&tokenin=Native&tokenout=0x5c12C812794B874fe4Fdea9A4960df599C89b8E5&slippage=0.5"
             frameBorder="0"
-            width="100%"
+            width="90%"
             height="650"
           ></iframe>
         </div>
-
         <div className="w-full">
           <h1 style={headingStyle}>How to Swap MELO On Voltichange</h1>
           <iframe
