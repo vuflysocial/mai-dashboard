@@ -423,15 +423,21 @@ const Home = (props) => {
     <div className="circle-images-container">
       <div className="circle-image">
         <img src="haller.jpg" alt="Circle 1" className="circle-img" />
+        <a href="/nfts">
         <button>Haller.</button>
+        </a>
       </div>
       <div className="circle-image">
         <img src="vibe.jpg" alt="Circle 2" className="circle-img" />
+        <a href="/nfts">
         <button>Vibe</button>
+        </a>
       </div>
       <div className="circle-image ">
         <img src="circle-3.jpg" alt="Dotty Ca$h" className="circle-img" />
+        <a href="/nfts">
         <button>Dotty Ca$h</button>
+        </a>
       </div>
       <div className="circle-image">
         <img src="loading..." alt="..." className="circle-img" />
