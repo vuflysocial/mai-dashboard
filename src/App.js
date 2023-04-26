@@ -7,9 +7,10 @@ import { Sidebar } from "./components/Layouts/sidebar.layouts";
 import Octocat from "./components/Utilities/octocat";
 import Home from "./components/Home/main.home";
 import FAQ from "./components/FAQ/main.faq";
-import Dash from "./components/Dash/main.dash";
+
 import Trade from "./components/Trade/main.trade";
 import NFTS from "./components/NFTS/main.nfts";
+import Tv from "./components/tv/main.tv";
 import TheStory from "./components/TheStory/main.thestory";
 import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
 import "./App.css"; // Import the CSS file for the animations
@@ -29,7 +30,7 @@ export default function App() {
                   <Home
 
                     titleFont="canva sans"
-                    title="melo inu"
+                    title="  melo inu"
                     size='height: 36px width: 36px'
                     description2="dashboard."
                     description="melo inu is a fused tabby cat with shiba inu. (you can read of how our tabby became fused with shiba from the paws of our cat scientist shittoshi catama from the whitepaper link below). melo inu was created as a community coin here to help revouloutionize the crypto world.
@@ -62,8 +63,9 @@ export default function App() {
                 }
               />
 
-              <Route path="/dash" element={<Dash />} />
+
               <Route path="/thestory" element={<TheStory />} />
+              <Route path="/tv" element={<Tv />} />
               <Route path="/nfts" element={<NFTS />} />
               <Route path="/trade" element={<Trade />} />
               <Route path="/question" element={<FAQ />} />
