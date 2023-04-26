@@ -6,7 +6,7 @@ import styles from "../styles/styles.css"
 const FAQ = () => {
   const lists = [
     {
-      question: "...",
+      question: "",
       li: false,
       answer:
         "",
@@ -53,6 +53,7 @@ const FAQ = () => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        overflow: "auto", // add overflow property to container
       }}
     >
       <div className="p-2 mt-2">
