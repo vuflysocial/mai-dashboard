@@ -53,6 +53,7 @@ const thestory = () => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        overflow: "auto", // add overflow property to container
       }}
     >
       <a href="https://www.dextools.io/app/en/canto/pair-explorer/0x0958093f4bbf679e5898a46215d2ecb400ce4c67" target="_blank" rel="noopener noreferrer">
@@ -122,4 +123,3 @@ const thestory = () => {
 };
 
 export default thestory;
-
