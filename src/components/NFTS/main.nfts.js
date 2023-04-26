@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const SocialCard = ({ title, img, icon, children, width, height }) => {
   return (
@@ -24,7 +24,7 @@ const SocialCard = ({ title, img, icon, children, width, height }) => {
       >
         <img src={img} alt="user profile image" style={{ borderRadius: "50%", width: "50px", height: "50px", marginRight: "10px" }} />
         <h3 className="mt-5 w-36 md:w-52 md:h-15 md:text-2xl font-medium">{title}</h3>
-        <FontAwesomeIcon icon={icon} />
+        <FontAwesomeIcon icon={icon} color="green"/>
       </div>
       {children}
     </div>
@@ -50,7 +50,7 @@ const nfts = () => {
               <SocialCard
                 title="Chance The Rapper"
                 img="openai.png"
-                icon={faPaperclip}
+                icon={faCheckCircle}
                 width="560px"
                 height="315px"
               >
@@ -68,7 +68,7 @@ const nfts = () => {
               <SocialCard
                 title="Pammy Hilton"
                 img="openai.png"
-                icon={faPaperclip}
+                icon={faCheckCircle}
                 width="560px"
                 height="315px"
               >
@@ -86,7 +86,7 @@ const nfts = () => {
               <SocialCard
                 title="Haller"
                 img="openai.png"
-                icon={faPaperclip}
+                icon={faCheckCircle}
                 width="560px"
                 height="315px"
               >
@@ -105,7 +105,7 @@ const nfts = () => {
               <SocialCard
                 title="VIBE"
                 img="openai.png"
-                icon={faPaperclip}
+                icon={faCheckCircle}
                 width="560px"
                 height="315px"
               >
@@ -126,7 +126,7 @@ const nfts = () => {
               <SocialCard
                 title="DOTTY CA$H"
                 img="openai.png"
-                icon={faPaperclip}
+                icon={faCheckCircle}
                 width="560px"
                 height="315px"
               >
