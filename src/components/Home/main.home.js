@@ -142,6 +142,7 @@ const Home = (props) => {
           fontSize: "94px",
           fontFamily: "Canva Sans", // replace with your desired font name
           fontWeight: "bold", // added font weight property
+               textAlign: "center",
         }}
       >
         <div>
