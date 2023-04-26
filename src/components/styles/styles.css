@@ -96,8 +96,8 @@
 
   .circle-img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
   }
 
 
@@ -136,3 +136,8 @@
     border-radius: 20px;
   }
 
+  .social-card {
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
