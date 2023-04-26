@@ -78,7 +78,7 @@ const Home = (props) => {
     <div>
         <div
       style={{
-        backgroundImage: `url('one.png')`,
+        backgroundImage: `url('')`,
         backgroundPosition: "top",
         backgroundSize: "",
         backgroundRepeat: "no-repeat",
