@@ -415,9 +415,10 @@ const Home = (props) => {
     </Container>
     <br/>
     <br/>
+    <Container className="border-container rounded-lg px-5 py-2.5 border-2 border-black shadow-lg ">
     <div>
       <h1
-      className="text-2xl md:text-7xl text-black"> Trending Artist</h1>
+      className="border-container rounded-lg px-5 py-2.5 border-2 border-black shadow-lg  text-2xl md:text-7xl text-black"> Trending Artist</h1>
     </div>
 
     <div className="circle-images-container">
@@ -453,6 +454,7 @@ const Home = (props) => {
       </a>
       </div>
     </div>
+    </Container>
 
 
     </div>
