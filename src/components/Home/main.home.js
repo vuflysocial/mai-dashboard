@@ -87,6 +87,7 @@ const Home = (props) => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        overflow: "auto", // add overflow property to container
       }}
     >
       <div>
