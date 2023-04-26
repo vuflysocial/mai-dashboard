@@ -25,7 +25,7 @@ const Home = (props) => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "melo inu" ];
   const period = 2000;
-
+  const [myElementOffsetTop, setMyElementOffsetTop] = useState(null);
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -58,19 +58,21 @@ const Home = (props) => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
-  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    const myElement = document.getElementById("my-element");
+    if (myElement) {
+      setMyElementOffsetTop(myElement.offsetTop);
+    }
   }, []);
+
+  const handleButtonClick = () => {
+    window.scrollTo({
+      top: myElementOffsetTop + 2000,
+      behavior: "smooth",
+    });
+  };
+
+
 
   return (
     <div>
@@ -91,6 +93,11 @@ const Home = (props) => {
       }}
     >
       <div>
+      <div className="mt-5 w-36 md:w-52 md:h-15 md:text-2xl font-medium rounded-lg text-center">
+      <button  onClick={handleButtonClick}>⬇️</button>
+      <div id="my-element"></div>
+    </div>
+
       {/* Add your tab links */}
       <div className="flex justify-center bg-white py-4">
         <a href="https://twitter.com/meloinu" className="px-4 py-2 hover:bg-green-300">
@@ -473,3 +480,4 @@ export default Home;
     }
   `}
 </style>
+
