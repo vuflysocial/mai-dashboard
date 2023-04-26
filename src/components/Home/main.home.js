@@ -83,7 +83,7 @@ const Home = (props) => {
         backgroundSize: "",
         backgroundRepeat: "no-repeat",
         opacity: 1,
-        height: "440vh",
+        height: "420vh",
         width: "90vw",
         display: "flex",
         justifyContent: "center",
