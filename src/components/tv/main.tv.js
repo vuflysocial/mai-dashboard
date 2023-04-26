@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from '../styles/styles.css';
+import styled from 'styled-components';
 
 const VideoPlayer = styled.video`
   width: 100%;
