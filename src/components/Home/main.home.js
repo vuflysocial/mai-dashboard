@@ -132,7 +132,7 @@ const Home = (props) => {
       </div>
     </div>
 
-    <a href="https://meloai.netlify.app/" target="_blank" rel="noopener noreferrer">
+    <a href="https://maigpt.vercel.app" target="_blank" rel="noopener noreferrer">
         <button
           type="button"
           className="mt-5 w-36 md:w-52 md:h-15 md:text-2xl font-medium rounded-lg px-5 py-2.5 border-2 border-black shadow-lg text-center mr-2 mb-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-green text-dark animate-colors"
