@@ -43,7 +43,7 @@ const Trade = () => {
         <div className="w-full mb-10">
           <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
           <iframe
-            src="https://voltichange.net/api/widget/?chain=56&darktheme=false&tokenin=Native&tokenout=0x5c12C812794B874fe4Fdea9A4960df599C89b8E5&slippage=0.5"
+            src="https://voltichange.net/api/widget/?chain=56&darktheme=false&tokenin=Native&tokenout=0xb28b2c9afddacf0db50278e8517988e36659463a&slippage=0.5"
             frameBorder="0"
             width="90%"
             height="650"
